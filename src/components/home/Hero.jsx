@@ -23,7 +23,12 @@ export default function Hero() {
           alt=""
           className="h-full w-full object-cover opacity-90"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(5,5,7,0.4)_0%,rgba(5,5,7,0.1)_40%,rgba(5,5,7,0.92)_100%)]" />
+        {/* night: constellation of gold and ivory stars */}
+        <div className="stars absolute inset-0 opacity-60" />
+        {/* light from darkness: a soft gold beam rising behind the copy */}
+        <div className="beam absolute inset-0" />
+        <div className="absolute -top-1/4 start-[38%] h-[150%] w-[38%] rotate-[18deg] bg-[linear-gradient(to_bottom,rgba(244,231,148,0.10)_0%,rgba(212,175,55,0.04)_45%,transparent_75%)] blur-2xl" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(5,5,7,0.55)_0%,rgba(5,5,7,0.18)_40%,rgba(5,5,7,0.96)_100%)]" />
       </div>
       <div className="shell">
         <div className="grid items-center gap-14 lg:grid-cols-[1.03fr_0.97fr] lg:gap-8">
@@ -65,10 +70,10 @@ export default function Hero() {
               {...fadeUp(0.52)}
               className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-white/10 pt-6"
             >
-              <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1.5 text-[12px] text-mauve">
+              <span className="inline-flex items-center gap-2 rounded-full border border-brand/25 bg-white/70 px-3 py-1.5 text-[12px] text-mauve">
                 <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#2f6b4f]/40" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[#2f6b4f]" />
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand/40" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-brand" />
                 </span>
                 پذیرش پروژه جدید برای فصل آینده
               </span>

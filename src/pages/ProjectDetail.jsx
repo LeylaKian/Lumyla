@@ -55,7 +55,7 @@ export default function ProjectDetail() {
               <span className="text-[11.5px] text-muted">{project.year}</span>
             </div>
 
-            <h1 className="display-2 mt-5 font-bold text-brand">{project.title}</h1>
+            <h1 className="display-2 mt-5 font-bold text-ivory">{project.title}</h1>
             <p className="lede mt-4 max-w-2xl">{project.description}</p>
           </Reveal>
         </div>

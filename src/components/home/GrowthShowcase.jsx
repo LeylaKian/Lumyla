@@ -17,7 +17,7 @@ import { toPersianDigits } from '../../lib/format'
 function ChartTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null
   return (
-    <div className="rounded-xl border border-white/15 bg-[#0C0A05] px-3 py-2 text-[11px] text-[#141008] shadow-lg">
+    <div className="rounded-xl border border-white/15 bg-[#0C0A05] px-3 py-2 text-[11px] text-ivory shadow-lg">
       <p className="mb-1 text-rose/80">{label}</p>
       {payload.map((entry) => (
         <p key={entry.dataKey} className="flex items-center gap-1.5">
@@ -36,7 +36,7 @@ function ChartTooltip({ active, payload, label }) {
 
 export default function GrowthShowcase() {
   return (
-    <section className="relative overflow-hidden bg-[#220002] py-20 text-ivory md:py-28">
+    <section className="relative overflow-hidden border-y border-brand/[0.07] bg-[linear-gradient(180deg,#0C0A05_0%,#131008_100%)] py-20 text-ivory md:py-28">
       <div
         className="pointer-events-none absolute -end-32 top-0 h-[420px] w-[420px] rounded-full bg-[#C5A059]/30 blur-[120px]"
         aria-hidden="true"
@@ -74,7 +74,7 @@ export default function GrowthShowcase() {
                 >
                   <Icon size={15} className="text-rose" aria-hidden="true" />
                   <p className="numeric mt-2 text-[17px] font-semibold text-ivory">{value}</p>
-                  <p className="text-[11px] text-[#141008]/55">{label}</p>
+                  <p className="text-[11px] text-ivory/55">{label}</p>
                 </div>
               ))}
             </Reveal>
@@ -97,7 +97,7 @@ export default function GrowthShowcase() {
                     </p>
                     <p className="mt-1 text-[10.5px] text-muted">بازدید ماهانه — شهریور</p>
                   </div>
-                  <span className="rounded-full bg-[#2f6b4f]/10 px-2.5 py-1 text-[10px] text-[#2f6b4f]">
+                  <span className="rounded-full bg-brand/10 px-2.5 py-1 text-[10px] text-brand">
                     +۲۴٪ نسبت به ماه قبل
                   </span>
                 </div>
@@ -111,7 +111,7 @@ export default function GrowthShowcase() {
                           <stop offset="100%" stopColor="#C5A059" stopOpacity={0} />
                         </linearGradient>
                       </defs>
-                      <CartesianGrid stroke="#141008" strokeOpacity={0.06} vertical={false} />
+                      <CartesianGrid stroke="#ECE8DF" strokeOpacity={0.07} vertical={false} />
                       <XAxis
                         dataKey="month"
                         tick={{ fontSize: 10, fill: '#A6A199' }}
@@ -129,7 +129,7 @@ export default function GrowthShowcase() {
                       <Area
                         type="monotone"
                         dataKey="traffic"
-                        stroke="#141008"
+                        stroke="#D4AF37"
                         strokeWidth={2.2}
                         fill="url(#growth-traffic)"
                         animationDuration={1400}

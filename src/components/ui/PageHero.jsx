@@ -15,7 +15,7 @@ export default function PageHero({ label, title, subtitle, children }) {
               {label}
             </span>
           )}
-          <h1 className="display-2 mt-5 font-bold text-brand">{title}</h1>
+          <h1 className="display-2 mt-5 font-bold text-ivory">{title}</h1>
           {subtitle && <p className="lede mt-4 max-w-2xl">{subtitle}</p>}
           {children}
         </Reveal>

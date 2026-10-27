@@ -13,7 +13,7 @@ const icons = {
 
 function FeaturedCard({ value }) {
   return (
-    <div className="relative flex h-full min-h-[220px] flex-col justify-between overflow-hidden rounded-[28px] bg-[linear-gradient(150deg,#141008_0%,#0C0A05_60%,#4a0d11_100%)] p-7 text-ivory">
+    <div className="relative flex h-full min-h-[220px] flex-col justify-between overflow-hidden rounded-[28px] border border-brand/20 bg-[linear-gradient(150deg,#141008_0%,#0C0A05_60%,#2E2405_100%)] p-7 text-ivory">
       <div className="relative z-10 max-w-[78%]">
         <span className="grid h-10 w-10 place-items-center rounded-xl bg-white/10 text-rose">
           <Compass size={17} aria-hidden="true" />
@@ -23,7 +23,7 @@ function FeaturedCard({ value }) {
       </div>
 
       <div className="pointer-events-none absolute -bottom-10 -end-6 h-44 w-44" aria-hidden="true">
-        <span className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_32%_28%,#F4F0E8_0%,#9BA3AF_38%,#C5A059_72%,#141008_100%)] opacity-90" />
+        <span className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_32%_28%,#F7E794_0%,#D4AF37_40%,#8A6B14_74%,#141008_100%)] opacity-90 shadow-[0_0_70px_rgba(212,175,55,0.35)]" />
         <span className="absolute -start-10 top-6 h-24 w-24 rounded-full border-[10px] border-white/15" />
         <span className="absolute -top-8 end-10 h-16 w-16 rounded-xl bg-white/10 backdrop-blur-sm" />
       </div>
@@ -68,7 +68,7 @@ export default function WhyBento() {
             <span className="h-1.5 w-1.5 rounded-full bg-mauve" aria-hidden="true" />
             چرا لومیلا
           </span>
-          <h2 className="display-2 mt-5 font-bold text-brand">
+          <h2 className="display-2 mt-5 font-bold text-ivory">
             همکاری با ما چه <span className="text-gradient">تفاوتی</span> می‌سازد؟
           </h2>
         </Reveal>

@@ -36,7 +36,7 @@ export default function Header() {
         <div
           className={`flex items-center justify-between gap-3 rounded-full border px-3 py-2.5 transition-all duration-500 ease-silk ${
             scrolled
-              ? 'border-white/80 bg-white/90 shadow-card backdrop-blur-2xl'
+              ? 'border-brand/30 bg-white/90 shadow-card backdrop-blur-2xl'
               : 'border-white/60 bg-white/70 shadow-soft backdrop-blur-xl'
           }`}
         >

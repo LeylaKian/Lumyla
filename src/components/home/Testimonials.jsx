@@ -22,7 +22,7 @@ export default function Testimonials() {
               <span className="h-1.5 w-1.5 rounded-full bg-mauve" aria-hidden="true" />
               نظرات
             </span>
-            <h2 className="display-2 mt-5 font-bold text-brand">
+            <h2 className="display-2 mt-5 font-bold text-ivory">
               تجربه همکاری از <span className="text-gradient">نگاه مشتریان</span>
             </h2>
             <p className="lede mt-4 max-w-md">

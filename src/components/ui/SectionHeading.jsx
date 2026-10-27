@@ -25,7 +25,7 @@ export default function SectionHeading({
         </span>
       )}
       <h2
-        className={`display-2 mt-5 font-bold ${isLight ? 'text-ivory' : 'text-brand'}`}
+        className="display-2 mt-5 font-bold text-ivory"
       >
         {title}
         {highlight && (

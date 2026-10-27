@@ -45,7 +45,7 @@ function ServiceVisual({ variant, tone }) {
   if (variant === 'browser') {
     return (
       <div className="relative h-full w-full overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(150deg,#0C0A05_0%,#4a0d11_55%,#C5A059_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(150deg,#0C0A05_0%,#2E2405_55%,#C5A059_100%)]" />
         <div className="absolute inset-x-6 top-7 overflow-hidden rounded-xl border border-white/60 bg-white shadow-[0_24px_50px_-28px_rgba(0,0,0,0.6)] transition-transform duration-700 ease-silk group-hover:-translate-y-1">
           <div className="flex items-center gap-1.5 border-b border-brand/[0.06] px-2.5 py-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-[#9BA3AF]" />
@@ -144,7 +144,7 @@ export default function ServicesGrid() {
               <span className="h-1.5 w-1.5 rounded-full bg-mauve" aria-hidden="true" />
               خدمات لومیلا
             </span>
-            <h2 className="display-2 mt-5 max-w-xl font-bold text-brand">
+            <h2 className="display-2 mt-5 max-w-xl font-bold text-ivory">
               از ایده تا رشد، <span className="text-gradient">کنار برند شما</span>
             </h2>
             <p className="lede mt-4 max-w-xl">

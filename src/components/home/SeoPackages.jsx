@@ -22,7 +22,7 @@ export default function SeoPackages() {
               <article
                 className={`relative flex h-full flex-col rounded-[28px] border p-7 ${
                   pkg.featured
-                    ? 'border-brand/50 bg-[linear-gradient(165deg,#141008_0%,#0C0A05_100%)] shadow-glow'
+                    ? 'gold-frame border-brand/50 bg-[linear-gradient(165deg,#141008_0%,#0C0A05_100%)] shadow-glow'
                     : 'border-white/10 bg-white/[0.04]'
                 }`}
               >

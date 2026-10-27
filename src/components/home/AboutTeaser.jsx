@@ -88,7 +88,7 @@ export default function AboutTeaser() {
                 <span className="h-1.5 w-1.5 rounded-full bg-mauve" aria-hidden="true" />
                 درباره لومیلا
               </span>
-              <h2 className="display-2 mt-5 font-bold text-brand">
+              <h2 className="display-2 mt-5 font-bold text-ivory">
                 خلاقیت، وقتی ارزشمند است که <span className="text-gradient">نتیجه بسازد.</span>
               </h2>
               <p className="lede mt-5">

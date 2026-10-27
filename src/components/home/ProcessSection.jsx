@@ -21,7 +21,7 @@ export default function ProcessSection() {
             <span className="h-1.5 w-1.5 rounded-full bg-mauve" aria-hidden="true" />
             فرآیند کار
           </span>
-          <h2 className="display-2 mt-5 font-bold text-brand">
+          <h2 className="display-2 mt-5 font-bold text-ivory">
             مسیر همکاری با <span className="text-gradient">لومیلا</span>
           </h2>
           <p className="lede mt-4">

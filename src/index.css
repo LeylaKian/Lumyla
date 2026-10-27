@@ -1,4 +1,17 @@
 @import '@fontsource-variable/vazirmatn';
+
+@property --lumyla-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes gold-spin {
+  to {
+    --lumyla-angle: 360deg;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -169,6 +182,63 @@
 
   .noise {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  }
+
+  /* constellation of tiny gold/ivory stars — the "night" of Night-Gold */
+  .stars {
+    background-image:
+      radial-gradient(1px 1px at 22% 28%, rgba(212, 175, 55, 0.75) 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 74% 14%, rgba(244, 240, 232, 0.6) 50%, transparent 51%),
+      radial-gradient(1px 1px at 52% 62%, rgba(224, 230, 237, 0.45) 50%, transparent 51%),
+      radial-gradient(2px 2px at 86% 82%, rgba(212, 175, 55, 0.4) 50%, transparent 51%),
+      radial-gradient(1px 1px at 9% 84%, rgba(244, 240, 232, 0.4) 50%, transparent 51%),
+      radial-gradient(1px 1px at 64% 44%, rgba(212, 175, 55, 0.5) 50%, transparent 51%);
+    background-size: 430px 430px;
+  }
+
+  /* soft gold light rising from the darkness — sits behind the hero copy */
+  .beam {
+    background:
+      radial-gradient(
+        55% 48% at 62% 92%,
+        rgba(212, 175, 55, 0.16) 0%,
+        rgba(212, 175, 55, 0.05) 48%,
+        rgba(5, 5, 7, 0) 78%
+      ),
+      radial-gradient(
+        40% 34% at 18% 12%,
+        rgba(118, 101, 232, 0.1) 0%,
+        rgba(5, 5, 7, 0) 70%
+      );
+  }
+
+  /* slow rotating shimmer frame for featured cards */
+  .gold-frame {
+    position: relative;
+  }
+  .gold-frame::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: conic-gradient(
+      from var(--lumyla-angle, 0deg),
+      rgba(212, 175, 55, 0.55) 0deg,
+      rgba(244, 231, 148, 0.9) 40deg,
+      rgba(212, 175, 55, 0.35) 90deg,
+      transparent 170deg,
+      transparent 250deg,
+      rgba(212, 175, 55, 0.45) 320deg
+    );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    animation: gold-spin 7s linear infinite;
+    pointer-events: none;
   }
 
   .hide-scrollbar {

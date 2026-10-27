@@ -13,9 +13,13 @@ export default function FeaturedProjects() {
   const visible = projects.filter((project) => filter === 'all' || project.category === filter)
 
   return (
-    <section className="relative overflow-hidden bg-[#F7F1EE] py-20 md:py-28">
+    <section className="relative overflow-hidden border-y border-brand/[0.07] bg-[linear-gradient(180deg,#08080C_0%,#0B0B10_100%)] py-20 md:py-28">
       <div
-        className="pointer-events-none absolute -end-24 top-10 h-72 w-72 rounded-full bg-[#9BA3AF]/25 blur-3xl"
+        className="pointer-events-none absolute -end-24 top-10 h-72 w-72 rounded-full bg-brand/[0.07] blur-3xl"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute -start-20 bottom-0 h-64 w-64 rounded-full bg-[#9BA3AF]/10 blur-3xl"
         aria-hidden="true"
       />
       <div className="shell relative">
@@ -25,7 +29,7 @@ export default function FeaturedProjects() {
               <span className="h-1.5 w-1.5 rounded-full bg-mauve" aria-hidden="true" />
               نمونه‌کارها
             </span>
-            <h2 className="display-2 mt-5 font-bold text-brand">
+            <h2 className="display-2 mt-5 font-bold text-ivory">
               پروژه‌هایی که <span className="text-gradient">داستان دارند</span>
             </h2>
             <p className="lede mt-4 max-w-lg">هر پروژه، فرصتی برای خلق یک تجربه متفاوت.</p>

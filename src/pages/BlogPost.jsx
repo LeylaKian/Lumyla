@@ -46,7 +46,7 @@ export default function BlogPost() {
               <span className="text-mauve">{post.category}</span>
             </nav>
 
-            <h1 className="display-2 mt-5 font-bold text-brand">{post.title}</h1>
+            <h1 className="display-2 mt-5 font-bold text-ivory">{post.title}</h1>
             <div className="mt-5 flex flex-wrap items-center gap-3 text-[11.5px] text-muted">
               <span className="rounded-full bg-blush px-3 py-1 text-mauve">{post.category}</span>
               <span>{post.date}</span>
