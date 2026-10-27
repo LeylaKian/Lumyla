@@ -39,7 +39,7 @@ export default function Contact() {
 
           <Reveal delay={0.1}>
             <div className="space-y-4">
-              <div className="rounded-[30px] bg-[linear-gradient(150deg,#350103_0%,#2E0002_100%)] p-6 text-ivory sm:p-7">
+              <div className="rounded-[30px] bg-[linear-gradient(150deg,#141008_0%,#0C0A05_100%)] p-6 text-ivory sm:p-7">
                 <h2 className="text-[17px] font-bold">راه‌های ارتباطی</h2>
                 <ul className="mt-5 space-y-4">
                   {details.map(({ Icon, label, value, ltr }) => (
@@ -48,7 +48,7 @@ export default function Contact() {
                         <Icon size={15} aria-hidden="true" />
                       </span>
                       <span>
-                        <span className="block text-[10.5px] text-ivory/50">{label}</span>
+                        <span className="block text-[10.5px] text-[#141008]/50">{label}</span>
                         <span
                           dir={ltr ? 'ltr' : undefined}
                           className={`block text-[13px] text-ivory/90 ${ltr ? 'text-start' : ''}`}

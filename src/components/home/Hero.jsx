@@ -17,10 +17,14 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden pb-16 pt-6 sm:pb-24 sm:pt-10">
-      <div
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[520px] opacity-[0.5] grid-lines [mask-image:radial-gradient(ellipse_at_top,#000_25%,transparent_72%)]"
-        aria-hidden="true"
-      />
+      <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+        <img
+          src="/site-bg.png"
+          alt=""
+          className="h-full w-full object-cover opacity-90"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(5,5,7,0.4)_0%,rgba(5,5,7,0.1)_40%,rgba(5,5,7,0.92)_100%)]" />
+      </div>
       <div className="shell">
         <div className="grid items-center gap-14 lg:grid-cols-[1.03fr_0.97fr] lg:gap-8">
           <div className="max-w-[600px]">
@@ -31,17 +35,18 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            <motion.h1 {...fadeUp(0.15)} className="display-1 mt-6 font-bold text-brand">
-              ایده‌های بزرگ،
+            <motion.h1 {...fadeUp(0.15)} className="display-1 mt-6 font-bold text-ivory">
+              کسب‌وکار بدون سایت خوب و سئو،
               <br />
-              تجربه‌های <span className="text-gradient">ماندگار،</span>
+              <span className="text-gradient-rose">در تاریکی است.</span>
               <br />
-              رشد واقعی.
+              <span className="text-gradient">لومیلا مثل نور، کنار شماست.</span>
             </motion.h1>
 
             <motion.p {...fadeUp(0.28)} className="lede mt-6 max-w-[520px]">
-              در لومیلا، طراحی خلاقانه و استراتژی هوشمند را کنار هم قرار می‌دهیم تا برند
-              شما در دنیای دیجیتال متفاوت دیده شود و هدفمند رشد کند.
+              لومیلا استودیو خلاقیت و رشد دیجیتال است؛ با طراحی سایت، پکیج‌های سئو و
+              هویت بصری، برند شما را از تاریکی نتایج دنبال‌صفحه به نور صفحه اول
+              می‌رسانیم.
             </motion.p>
 
             <motion.div
@@ -58,7 +63,7 @@ export default function Hero() {
 
             <motion.div
               {...fadeUp(0.52)}
-              className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-brand/10 pt-6"
+              className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-white/10 pt-6"
             >
               <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1.5 text-[12px] text-mauve">
                 <span className="relative flex h-2 w-2">

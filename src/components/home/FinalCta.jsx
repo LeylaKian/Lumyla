@@ -9,9 +9,9 @@ export default function FinalCta() {
     <section className="pb-20 md:pb-28">
       <div className="shell">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[36px] bg-[linear-gradient(135deg,#350103_0%,#5c1519_45%,#905954_100%)] px-6 py-16 text-center sm:px-10 md:py-20">
+          <div className="relative overflow-hidden rounded-[36px] bg-[linear-gradient(135deg,#141008_0%,#B8860B_45%,#C5A059_100%)] px-6 py-16 text-center sm:px-10 md:py-20">
             <div
-              className="pointer-events-none absolute -end-16 -top-16 h-56 w-56 rounded-full bg-[#CFB2A2]/25 blur-3xl"
+              className="pointer-events-none absolute -end-16 -top-16 h-56 w-56 rounded-full bg-[#9BA3AF]/25 blur-3xl"
               aria-hidden="true"
             />
             <div

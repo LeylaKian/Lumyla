@@ -58,7 +58,7 @@ export default function NewsletterForm() {
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-full bg-brand px-5 text-[13px] font-medium text-ivory transition-colors hover:bg-brand-deep disabled:opacity-70"
+          className="inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-full bg-brand px-5 text-[13px] font-medium text-[#141008] transition-colors hover:bg-brand-deep disabled:opacity-70"
         >
           {status === 'loading' && <Loader2 size={15} className="animate-spin" aria-hidden="true" />}
           عضویت

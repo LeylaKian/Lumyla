@@ -49,7 +49,7 @@ export default function ProjectDetail() {
               <span className="rounded-full bg-blush px-3 py-1.5 text-[11px] text-mauve">
                 {project.categoryLabel}
               </span>
-              <span className="rounded-full bg-brand px-3 py-1.5 text-[11px] text-ivory">
+              <span className="rounded-full bg-brand px-3 py-1.5 text-[11px] text-[#141008]">
                 نمونه نمایشی
               </span>
               <span className="text-[11.5px] text-muted">{project.year}</span>
@@ -87,7 +87,7 @@ export default function ProjectDetail() {
                 {project.scope.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-2 rounded-xl border border-brand/[0.06] bg-[#FCFAF9] px-3.5 py-2.5"
+                    className="flex items-start gap-2 rounded-xl border border-brand/[0.06] bg-[#101018] px-3.5 py-2.5"
                   >
                     <Check size={13} aria-hidden="true" className="mt-1.5 shrink-0 text-mauve" />
                     <span className="text-[12.5px] leading-7 text-muted">{item}</span>
@@ -104,7 +104,7 @@ export default function ProjectDetail() {
 
           <Reveal delay={0.1}>
             <div className="space-y-4">
-              <div className="rounded-[30px] border border-brand/[0.07] bg-[linear-gradient(150deg,#350103_0%,#2E0002_100%)] p-6 text-ivory sm:p-7">
+              <div className="rounded-[30px] border border-brand/[0.07] bg-[linear-gradient(150deg,#141008_0%,#0C0A05_100%)] p-6 text-ivory sm:p-7">
                 <h2 className="text-[16px] font-bold">پروژه‌ای مشابه دارید؟</h2>
                 <p className="mt-2 text-[12.8px] leading-7 text-ivory/70">
                   بگویید کسب‌وکار شما چه ویژگی‌ای دارد تا مسیر مناسب را با هم پیدا کنیم.
@@ -122,7 +122,7 @@ export default function ProjectDetail() {
                   <span className="text-[10.5px] tracking-wide text-mauve">پروژه بعدی</span>
                   <div className="mt-2 flex items-center justify-between gap-3">
                     <h3 className="text-[16px] font-bold text-brand">{nextProject.title}</h3>
-                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-brand/10 text-mauve transition-colors group-hover:border-brand group-hover:bg-brand group-hover:text-ivory">
+                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full border border-brand/10 text-mauve transition-colors group-hover:border-brand group-hover:bg-brand group-hover:text-[#141008]">
                       <ArrowUpLeft size={14} aria-hidden="true" />
                     </span>
                   </div>

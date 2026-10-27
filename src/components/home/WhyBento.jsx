@@ -13,7 +13,7 @@ const icons = {
 
 function FeaturedCard({ value }) {
   return (
-    <div className="relative flex h-full min-h-[220px] flex-col justify-between overflow-hidden rounded-[28px] bg-[linear-gradient(150deg,#350103_0%,#2E0002_60%,#4a0d11_100%)] p-7 text-ivory">
+    <div className="relative flex h-full min-h-[220px] flex-col justify-between overflow-hidden rounded-[28px] bg-[linear-gradient(150deg,#141008_0%,#0C0A05_60%,#4a0d11_100%)] p-7 text-ivory">
       <div className="relative z-10 max-w-[78%]">
         <span className="grid h-10 w-10 place-items-center rounded-xl bg-white/10 text-rose">
           <Compass size={17} aria-hidden="true" />
@@ -23,7 +23,7 @@ function FeaturedCard({ value }) {
       </div>
 
       <div className="pointer-events-none absolute -bottom-10 -end-6 h-44 w-44" aria-hidden="true">
-        <span className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_32%_28%,#EFE2DA_0%,#CFB2A2_38%,#905954_72%,#350103_100%)] opacity-90" />
+        <span className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_32%_28%,#F4F0E8_0%,#9BA3AF_38%,#C5A059_72%,#141008_100%)] opacity-90" />
         <span className="absolute -start-10 top-6 h-24 w-24 rounded-full border-[10px] border-white/15" />
         <span className="absolute -top-8 end-10 h-16 w-16 rounded-xl bg-white/10 backdrop-blur-sm" />
       </div>
@@ -34,7 +34,7 @@ function FeaturedCard({ value }) {
 function WideCard({ value }) {
   const Icon = icons[value.icon] ?? Sparkles
   return (
-    <div className="relative flex h-full items-center justify-between gap-6 overflow-hidden rounded-[28px] border border-brand/[0.07] bg-[linear-gradient(120deg,#F1E7E4_0%,#FAF7F5_55%,#EFE2DA_100%)] p-7">
+    <div className="relative flex h-full items-center justify-between gap-6 overflow-hidden rounded-[28px] border border-brand/[0.07] bg-[linear-gradient(120deg,#131420_0%,#0B0B10_55%,#F4F0E8_100%)] p-7">
       <div>
         <span className="grid h-10 w-10 place-items-center rounded-xl bg-white/80 text-mauve">
           <Icon size={17} aria-hidden="true" />
@@ -83,7 +83,7 @@ export default function WhyBento() {
             return (
               <Reveal key={value.title} delay={0.06 * (index + 1)}>
                 <div className="group h-full rounded-[28px] border border-brand/[0.07] bg-white p-6 transition-all duration-500 ease-silk hover:-translate-y-1 hover:shadow-soft">
-                  <span className="grid h-10 w-10 place-items-center rounded-xl bg-blush text-mauve transition-colors duration-400 group-hover:bg-brand group-hover:text-ivory">
+                  <span className="grid h-10 w-10 place-items-center rounded-xl bg-blush text-mauve transition-colors duration-400 group-hover:bg-brand group-hover:text-[#141008]">
                     <Icon size={17} aria-hidden="true" />
                   </span>
                   <h3 className="mt-4 text-[15.5px] font-semibold text-brand">{value.title}</h3>

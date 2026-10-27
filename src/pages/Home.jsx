@@ -3,6 +3,8 @@ import Hero from '../components/home/Hero'
 import BrandStrip from '../components/home/BrandStrip'
 import AboutTeaser from '../components/home/AboutTeaser'
 import ServicesGrid from '../components/home/ServicesGrid'
+import SeoPackages from '../components/home/SeoPackages'
+import DesignServices from '../components/home/DesignServices'
 import FeaturedProjects from '../components/home/FeaturedProjects'
 import WhyBento from '../components/home/WhyBento'
 import ProcessSection from '../components/home/ProcessSection'
@@ -15,7 +17,7 @@ export default function Home() {
   usePageMeta({
     title: 'استودیو خلاقیت و رشد دیجیتال',
     description:
-      'لومیلا؛ استودیو خلاقیت و رشد دیجیتال. سئو، طراحی سایت وردپرسی، هویت بصری و طراحی تجربه کاربری برای برندهایی که می‌خواهند متفاوت دیده شوند.',
+      'کسب‌وکار بدون سایت خوب و سئو در تاریکی است؛ لومیلا با طراحی سایت، پکیج‌های سئو و هویت بصری، مثل نور کنار شماست.',
   })
 
   return (
@@ -24,6 +26,8 @@ export default function Home() {
       <BrandStrip />
       <AboutTeaser />
       <ServicesGrid />
+      <SeoPackages />
+      <DesignServices />
       <FeaturedProjects />
       <WhyBento />
       <ProcessSection />

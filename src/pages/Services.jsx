@@ -78,7 +78,7 @@ export default function Services() {
                   </Link>
                 </div>
 
-                <div className="rounded-[24px] border border-brand/[0.06] bg-[#FCFAF9] p-5 sm:p-6">
+                <div className="rounded-[24px] border border-brand/[0.06] bg-[#101018] p-5 sm:p-6">
                   <h3 className="text-[12.5px] font-semibold tracking-wide text-brand">
                     این خدمت شامل چه چیزهایی است؟
                   </h3>

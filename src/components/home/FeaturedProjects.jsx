@@ -15,7 +15,7 @@ export default function FeaturedProjects() {
   return (
     <section className="relative overflow-hidden bg-[#F7F1EE] py-20 md:py-28">
       <div
-        className="pointer-events-none absolute -end-24 top-10 h-72 w-72 rounded-full bg-[#CFB2A2]/25 blur-3xl"
+        className="pointer-events-none absolute -end-24 top-10 h-72 w-72 rounded-full bg-[#9BA3AF]/25 blur-3xl"
         aria-hidden="true"
       />
       <div className="shell relative">
@@ -53,7 +53,7 @@ export default function FeaturedProjects() {
                   onClick={() => setFilter(item.key)}
                   className={`rounded-full border px-4 py-2 text-[12.5px] transition-all duration-300 ${
                     active
-                      ? 'border-brand bg-brand text-ivory shadow-soft'
+                      ? 'border-brand bg-brand text-[#141008] shadow-soft'
                       : 'border-brand/12 bg-white/70 text-muted hover:border-brand/25 hover:text-brand'
                   }`}
                 >

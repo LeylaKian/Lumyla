@@ -74,9 +74,9 @@ export default function ServiceDetail() {
                 {service.deliverables.map((item, index) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 rounded-2xl border border-brand/[0.06] bg-[#FCFAF9] px-4 py-3.5"
+                    className="flex items-start gap-3 rounded-2xl border border-brand/[0.06] bg-[#101018] px-4 py-3.5"
                   >
-                    <span className="numeric mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand text-[10.5px] text-ivory">
+                    <span className="numeric mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-brand text-[10.5px] text-[#141008]">
                       {index + 1}
                     </span>
                     <span className="text-[13.5px] leading-7 text-ink/80">{item}</span>
@@ -99,7 +99,7 @@ export default function ServiceDetail() {
 
           <Reveal delay={0.1}>
             <div className="sticky top-28 space-y-4">
-              <div className="rounded-[30px] border border-brand/[0.07] bg-[linear-gradient(150deg,#350103_0%,#2E0002_100%)] p-6 text-ivory sm:p-7">
+              <div className="rounded-[30px] border border-brand/[0.07] bg-[linear-gradient(150deg,#141008_0%,#0C0A05_100%)] p-6 text-ivory sm:p-7">
                 <h2 className="text-[17px] font-bold">درباره این خدمت بپرسید</h2>
                 <p className="mt-2 text-[12.8px] leading-7 text-ivory/70">
                   اگر مطمئن نیستید این خدمت برای کسب‌وکار شما مناسب است، یک پیام کوتاه

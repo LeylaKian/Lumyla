@@ -14,7 +14,7 @@ export default function Layout({ children }) {
     <div className="flex min-h-screen flex-col bg-canvas">
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:end-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-brand focus:px-5 focus:py-2 focus:text-[13px] focus:text-ivory"
+        className="sr-only focus:not-sr-only focus:absolute focus:end-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-brand focus:px-5 focus:py-2 focus:text-[13px] focus:text-[#141008]"
       >
         رفتن به محتوای اصلی
       </a>

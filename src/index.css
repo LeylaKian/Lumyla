@@ -5,16 +5,16 @@
 
 @layer base {
   :root {
-    --lumyla-bg: #faf7f5;
-    --lumyla-bg-alt: #f1e7e4;
-    --lumyla-white: #ffffff;
-    --lumyla-brand: #350103;
-    --lumyla-brand-deep: #2e0002;
-    --lumyla-mauve: #905954;
-    --lumyla-rose: #cfb2a2;
-    --lumyla-ivory: #efe2da;
-    --lumyla-ink: #252127;
-    --lumyla-muted: #746c70;
+    --lumyla-bg: #050507;
+    --lumyla-bg-alt: #0b0b10;
+    --lumyla-white: #101018;
+    --lumyla-brand: #d4af37;
+    --lumyla-brand-deep: #b8860b;
+    --lumyla-mauve: #c5a059;
+    --lumyla-rose: #9ba3af;
+    --lumyla-ivory: #f4f0e8;
+    --lumyla-ink: #ece8df;
+    --lumyla-muted: #a6a199;
     --lumyla-digital: #7665e8;
   }
 
@@ -46,7 +46,7 @@
 
   ::selection {
     background: var(--lumyla-brand);
-    color: var(--lumyla-ivory);
+    color: #141008;
   }
 
   :focus-visible {
@@ -75,15 +75,15 @@
   }
 
   .surface {
-    @apply rounded-[28px] border border-brand/[0.07] bg-white shadow-soft;
+    @apply rounded-[28px] border border-white/10 bg-white shadow-soft;
   }
 
   .glass {
-    @apply border border-white/60 bg-white/70 backdrop-blur-xl;
+    @apply border border-white/10 bg-white/70 backdrop-blur-xl;
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full border border-brand/10 bg-white/70 px-4 py-1.5 text-[13px] font-medium tracking-tight text-mauve;
+    @apply inline-flex items-center gap-2 rounded-full border border-brand/20 bg-white/70 px-4 py-1.5 text-[13px] font-medium tracking-tight text-mauve;
   }
 
   .display-1 {
@@ -138,14 +138,14 @@
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(135deg, #350103 0%, #905954 55%, #b98d7c 100%);
+    background: linear-gradient(135deg, #f7e794 0%, #d4af37 55%, #8a6b14 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
 
   .text-gradient-rose {
-    background: linear-gradient(120deg, #efe2da 0%, #cfb2a2 60%, #905954 100%);
+    background: linear-gradient(120deg, #ece8df 0%, #9ba3af 60%, #c5a059 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -154,16 +154,16 @@
   .glow-warm {
     background: radial-gradient(
       circle at center,
-      rgba(207, 178, 162, 0.55) 0%,
-      rgba(239, 226, 218, 0.35) 38%,
-      rgba(250, 247, 245, 0) 72%
+      rgba(212, 175, 55, 0.22) 0%,
+      rgba(212, 175, 55, 0.08) 38%,
+      rgba(5, 5, 7, 0) 72%
     );
   }
 
   .grid-lines {
     background-image:
-      linear-gradient(to left, rgba(53, 1, 3, 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(53, 1, 3, 0.05) 1px, transparent 1px);
+      linear-gradient(to left, rgba(212, 175, 55, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(212, 175, 55, 0.06) 1px, transparent 1px);
     background-size: 72px 72px;
   }
 

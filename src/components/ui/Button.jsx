@@ -3,13 +3,13 @@ import { ArrowLeft } from 'lucide-react'
 
 const variants = {
   primary:
-    'bg-brand text-ivory shadow-[0_18px_40px_-22px_rgba(53,1,3,0.85)] hover:bg-brand-deep hover:shadow-[0_24px_50px_-22px_rgba(53,1,3,0.9)]',
+    'bg-brand text-[#141008] shadow-gold hover:bg-brand-deep hover:shadow-[0_24px_52px_-20px_rgba(212,175,55,0.55)]',
   outline:
-    'border border-brand/15 bg-white/70 text-brand hover:border-brand/30 hover:bg-white',
+    'border border-brand/25 bg-white/70 text-ivory hover:border-brand/50 hover:bg-white',
   light:
-    'bg-ivory text-brand hover:bg-white shadow-[0_18px_40px_-24px_rgba(46,0,2,0.55)]',
+    'bg-ivory text-[#141008] hover:bg-white shadow-[0_18px_40px_-24px_rgba(0,0,0,0.6)]',
   ghostLight:
-    'border border-white/25 bg-white/10 text-ivory backdrop-blur-md hover:bg-white/20',
+    'border border-white/20 bg-white/10 text-ivory backdrop-blur-md hover:bg-white/20',
 }
 
 const sizes = {

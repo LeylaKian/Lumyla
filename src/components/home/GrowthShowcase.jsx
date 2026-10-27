@@ -17,7 +17,7 @@ import { toPersianDigits } from '../../lib/format'
 function ChartTooltip({ active, payload, label }) {
   if (!active || !payload?.length) return null
   return (
-    <div className="rounded-xl border border-white/15 bg-[#2E0002] px-3 py-2 text-[11px] text-ivory shadow-lg">
+    <div className="rounded-xl border border-white/15 bg-[#0C0A05] px-3 py-2 text-[11px] text-[#141008] shadow-lg">
       <p className="mb-1 text-rose/80">{label}</p>
       {payload.map((entry) => (
         <p key={entry.dataKey} className="flex items-center gap-1.5">
@@ -38,11 +38,11 @@ export default function GrowthShowcase() {
   return (
     <section className="relative overflow-hidden bg-[#220002] py-20 text-ivory md:py-28">
       <div
-        className="pointer-events-none absolute -end-32 top-0 h-[420px] w-[420px] rounded-full bg-[#905954]/30 blur-[120px]"
+        className="pointer-events-none absolute -end-32 top-0 h-[420px] w-[420px] rounded-full bg-[#C5A059]/30 blur-[120px]"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute -start-24 bottom-0 h-[320px] w-[320px] rounded-full bg-[#CFB2A2]/15 blur-[110px]"
+        className="pointer-events-none absolute -start-24 bottom-0 h-[320px] w-[320px] rounded-full bg-[#9BA3AF]/15 blur-[110px]"
         aria-hidden="true"
       />
       <div className="shell relative">
@@ -74,7 +74,7 @@ export default function GrowthShowcase() {
                 >
                   <Icon size={15} className="text-rose" aria-hidden="true" />
                   <p className="numeric mt-2 text-[17px] font-semibold text-ivory">{value}</p>
-                  <p className="text-[11px] text-ivory/55">{label}</p>
+                  <p className="text-[11px] text-[#141008]/55">{label}</p>
                 </div>
               ))}
             </Reveal>
@@ -88,7 +88,7 @@ export default function GrowthShowcase() {
 
           <Reveal delay={0.1}>
             <div className="rounded-[30px] border border-white/12 bg-white/[0.06] p-3 backdrop-blur-xl sm:p-4">
-              <div className="rounded-[24px] bg-[#FAF7F5] p-5 text-ink shadow-[0_40px_90px_-40px_rgba(0,0,0,0.8)] sm:p-6">
+              <div className="rounded-[24px] bg-[#0B0B10] p-5 text-ink shadow-[0_40px_90px_-40px_rgba(0,0,0,0.8)] sm:p-6">
                 <div className="flex items-start justify-between">
                   <div>
                     <p className="text-[11px] text-muted">نمای کلی عملکرد ارگانیک</p>
@@ -107,29 +107,29 @@ export default function GrowthShowcase() {
                     <ComposedChart data={growthData} margin={{ top: 8, right: 6, bottom: 0, left: -18 }}>
                       <defs>
                         <linearGradient id="growth-traffic" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="0%" stopColor="#905954" stopOpacity={0.35} />
-                          <stop offset="100%" stopColor="#905954" stopOpacity={0} />
+                          <stop offset="0%" stopColor="#C5A059" stopOpacity={0.35} />
+                          <stop offset="100%" stopColor="#C5A059" stopOpacity={0} />
                         </linearGradient>
                       </defs>
-                      <CartesianGrid stroke="#350103" strokeOpacity={0.06} vertical={false} />
+                      <CartesianGrid stroke="#141008" strokeOpacity={0.06} vertical={false} />
                       <XAxis
                         dataKey="month"
-                        tick={{ fontSize: 10, fill: '#746C70' }}
+                        tick={{ fontSize: 10, fill: '#A6A199' }}
                         axisLine={false}
                         tickLine={false}
                         interval={0}
                       />
                       <YAxis
-                        tick={{ fontSize: 10, fill: '#746C70' }}
+                        tick={{ fontSize: 10, fill: '#A6A199' }}
                         axisLine={false}
                         tickLine={false}
                         width={40}
                       />
-                      <Tooltip content={<ChartTooltip />} cursor={{ stroke: '#905954', strokeOpacity: 0.2 }} />
+                      <Tooltip content={<ChartTooltip />} cursor={{ stroke: '#C5A059', strokeOpacity: 0.2 }} />
                       <Area
                         type="monotone"
                         dataKey="traffic"
-                        stroke="#350103"
+                        stroke="#141008"
                         strokeWidth={2.2}
                         fill="url(#growth-traffic)"
                         animationDuration={1400}
@@ -155,7 +155,7 @@ export default function GrowthShowcase() {
                         <span className="rounded-md bg-brand/[0.06] px-1.5 py-0.5 text-muted line-through">
                           {toPersianDigits(keyword.before)}
                         </span>
-                        <span className="rounded-md bg-brand px-1.5 py-0.5 text-ivory">
+                        <span className="rounded-md bg-brand px-1.5 py-0.5 text-[#141008]">
                           {toPersianDigits(keyword.after)}
                         </span>
                       </span>

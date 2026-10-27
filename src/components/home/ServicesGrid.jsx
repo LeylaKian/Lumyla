@@ -10,7 +10,7 @@ function ServiceVisual({ variant, tone }) {
   if (variant === 'analytics') {
     return (
       <div className="relative h-full w-full overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(135deg,#F1E7E4_0%,#FAF7F5_55%,#EFE2DA_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(135deg,#131420_0%,#0B0B10_55%,#F4F0E8_100%)]" />
         <div className="absolute inset-x-6 top-6 rounded-2xl border border-white bg-white/95 p-3 shadow-[0_20px_40px_-28px_rgba(46,0,2,0.5)] transition-transform duration-700 ease-silk group-hover:-translate-y-1">
           <div className="flex items-center justify-between">
             <span className="text-[10px] text-muted">نمودار رشد جستجو</span>
@@ -21,21 +21,21 @@ function ServiceVisual({ variant, tone }) {
           <svg viewBox="0 0 140 44" className="mt-2 h-11 w-full" aria-hidden="true">
             <defs>
               <linearGradient id="svc-seo" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#905954" stopOpacity="0.3" />
-                <stop offset="100%" stopColor="#905954" stopOpacity="0" />
+                <stop offset="0%" stopColor="#C5A059" stopOpacity="0.3" />
+                <stop offset="100%" stopColor="#C5A059" stopOpacity="0" />
               </linearGradient>
             </defs>
             <path d="M2 38 C 24 34, 34 22, 52 24 S 78 14, 96 16 S 120 6, 138 3 L138 44 L2 44 Z" fill="url(#svc-seo)" />
             <path
               d="M2 38 C 24 34, 34 22, 52 24 S 78 14, 96 16 S 120 6, 138 3"
               fill="none"
-              stroke="#350103"
+              stroke="#141008"
               strokeWidth="2"
               strokeLinecap="round"
             />
           </svg>
         </div>
-        <span className="absolute bottom-5 end-6 inline-flex items-center gap-1 rounded-full bg-brand px-2.5 py-1 text-[9.5px] text-ivory shadow-soft">
+        <span className="absolute bottom-5 end-6 inline-flex items-center gap-1 rounded-full bg-brand px-2.5 py-1 text-[9.5px] text-[#141008] shadow-soft">
           رتبه ۳
         </span>
       </div>
@@ -45,11 +45,11 @@ function ServiceVisual({ variant, tone }) {
   if (variant === 'browser') {
     return (
       <div className="relative h-full w-full overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(150deg,#2E0002_0%,#4a0d11_55%,#905954_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(150deg,#0C0A05_0%,#4a0d11_55%,#C5A059_100%)]" />
         <div className="absolute inset-x-6 top-7 overflow-hidden rounded-xl border border-white/60 bg-white shadow-[0_24px_50px_-28px_rgba(0,0,0,0.6)] transition-transform duration-700 ease-silk group-hover:-translate-y-1">
           <div className="flex items-center gap-1.5 border-b border-brand/[0.06] px-2.5 py-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#CFB2A2]" />
-            <span className="h-1.5 w-1.5 rounded-full bg-[#EFE2DA]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#9BA3AF]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#F4F0E8]" />
             <span className="ms-auto h-2 w-12 rounded-full bg-brand/[0.06]" />
           </div>
           <div className="p-2.5">
@@ -63,7 +63,7 @@ function ServiceVisual({ variant, tone }) {
                 <span className="block h-1 w-3/4 rounded-full bg-brand/15" />
                 <span className="block h-1 w-full rounded-full bg-brand/10" />
               </div>
-              <span className="h-11 rounded-lg bg-gradient-to-br from-[#F1E7E4] to-[#CFB2A2]" />
+              <span className="h-11 rounded-lg bg-gradient-to-br from-[#131420] to-[#9BA3AF]" />
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ function ServiceVisual({ variant, tone }) {
   if (variant === 'type') {
     return (
       <div className="relative h-full w-full overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(140deg,#EFE2DA_0%,#F1E7E4_45%,#CFB2A2_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(140deg,#F4F0E8_0%,#131420_45%,#9BA3AF_100%)]" />
         <div className="absolute inset-x-6 top-6 flex items-end gap-3">
           <span className="text-[42px] font-bold leading-none text-brand/85 transition-transform duration-700 ease-silk group-hover:-translate-y-1">
             آا
@@ -87,7 +87,7 @@ function ServiceVisual({ variant, tone }) {
           <span className="pb-2 text-[15px] leading-none text-brand/40">۰۱۲۳</span>
         </div>
         <div className="absolute bottom-6 start-6 flex gap-1.5">
-          {['#350103', '#905954', '#CFB2A2', '#EFE2DA', '#7665E8'].map((color) => (
+          {['#141008', '#C5A059', '#9BA3AF', '#F4F0E8', '#7665E8'].map((color) => (
             <span
               key={color}
               className="h-7 w-7 rounded-lg ring-1 ring-white/70 transition-transform duration-500 ease-silk group-hover:-translate-y-0.5"
@@ -103,7 +103,7 @@ function ServiceVisual({ variant, tone }) {
   }
 
   return (
-    <div className="relative h-full w-full overflow-hidden bg-[linear-gradient(150deg,#FAF7F5_0%,#F1E7E4_100%)]">
+    <div className="relative h-full w-full overflow-hidden bg-[linear-gradient(150deg,#0B0B10_0%,#131420_100%)]">
       <div className="absolute inset-x-6 top-6 rounded-2xl border border-dashed border-mauve/40 bg-white/70 p-3 backdrop-blur-sm transition-transform duration-700 ease-silk group-hover:-translate-y-1">
         <div className="flex items-center justify-between">
           <span className="h-1.5 w-10 rounded-full bg-mauve/35" />
@@ -129,7 +129,7 @@ function ServiceVisual({ variant, tone }) {
 
 const cardTone = {
   seo: 'bg-white',
-  wordpress: 'bg-[linear-gradient(160deg,#350103_0%,#2E0002_100%)] text-ivory',
+  wordpress: 'bg-[linear-gradient(160deg,#141008_0%,#0C0A05_100%)] text-ivory',
   graphic: 'bg-white',
   uiux: 'bg-white',
 }
@@ -168,7 +168,7 @@ export default function ServicesGrid() {
                   to={`/services/${service.slug}`}
                   className={`group flex h-full flex-col overflow-hidden rounded-[32px] border transition-all duration-500 ease-silk hover:-translate-y-1.5 hover:shadow-lift ${
                     isDark
-                      ? 'border-white/10 bg-brand text-ivory hover:shadow-[0_44px_110px_-50px_rgba(46,0,2,0.9)]'
+                      ? 'border-white/10 bg-brand text-[#141008] hover:shadow-[0_44px_110px_-50px_rgba(46,0,2,0.9)]'
                       : 'border-brand/[0.07] bg-white'
                   }`}
                 >
@@ -198,7 +198,7 @@ export default function ServicesGrid() {
                         className={`mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full border transition-all duration-400 ${
                           isDark
                             ? 'border-white/20 text-rose group-hover:border-rose group-hover:bg-rose group-hover:text-brand'
-                            : 'border-brand/10 text-mauve group-hover:border-brand group-hover:bg-brand group-hover:text-ivory'
+                            : 'border-brand/10 text-mauve group-hover:border-brand group-hover:bg-brand group-hover:text-[#141008]'
                         }`}
                       >
                         <ArrowUpLeft size={15} aria-hidden="true" />

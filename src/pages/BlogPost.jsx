@@ -64,7 +64,7 @@ export default function BlogPost() {
               <div className="absolute inset-0 opacity-25 noise" />
               <div className="absolute -bottom-16 -start-10 h-52 w-52 rounded-full border border-white/25" />
               <div className="absolute end-10 top-10 h-16 w-16 rounded-xl bg-white/15 backdrop-blur-sm" />
-              <span className="absolute bottom-7 start-8 text-[11px] tracking-[0.3em] text-white/60">
+              <span className="absolute bottom-7 start-8 text-[11px] tracking-[0.3em] text-ivory/60">
                 LUMYLA JOURNAL
               </span>
             </div>

@@ -48,7 +48,7 @@ export default function Blog() {
                 onClick={() => setCategory(item)}
                 className={`rounded-full border px-4 py-2 text-[12.5px] transition-all duration-300 ${
                   active
-                    ? 'border-brand bg-brand text-ivory shadow-soft'
+                    ? 'border-brand bg-brand text-[#141008] shadow-soft'
                     : 'border-brand/12 bg-white/70 text-muted hover:border-brand/25 hover:text-brand'
                 }`}
               >

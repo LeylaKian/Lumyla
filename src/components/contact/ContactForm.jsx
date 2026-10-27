@@ -15,7 +15,7 @@ function validate(values) {
 }
 
 const inputClass =
-  'w-full rounded-2xl border border-brand/12 bg-[#FCFAF9] px-4 py-3 text-[13.5px] text-ink outline-none transition-colors placeholder:text-muted/60 focus:border-mauve/60 focus:bg-white'
+  'w-full rounded-2xl border border-brand/12 bg-[#101018] px-4 py-3 text-[13.5px] text-ink outline-none transition-colors placeholder:text-muted/60 focus:border-mauve/60 focus:bg-white'
 
 export default function ContactForm() {
   const [values, setValues] = useState(initialForm)
@@ -201,7 +201,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === 'sending'}
-        className="group mt-6 inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-brand px-6 text-[14px] font-medium text-ivory transition-all duration-300 hover:bg-brand-deep disabled:opacity-70 sm:w-auto"
+        className="group mt-6 inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-brand px-6 text-[14px] font-medium text-[#141008] transition-all duration-300 hover:bg-brand-deep disabled:opacity-70 sm:w-auto"
       >
         {status === 'sending' ? (
           <Loader2 size={16} className="animate-spin" aria-hidden="true" />

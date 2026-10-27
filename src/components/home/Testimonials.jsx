@@ -35,7 +35,7 @@ export default function Testimonials() {
                 type="button"
                 onClick={() => go(-1)}
                 aria-label="نظر قبلی"
-                className="grid h-11 w-11 place-items-center rounded-full border border-brand/12 bg-white text-brand transition-colors hover:border-brand hover:bg-brand hover:text-ivory"
+                className="grid h-11 w-11 place-items-center rounded-full border border-brand/12 bg-white text-brand transition-colors hover:border-brand hover:bg-brand hover:text-[#141008]"
               >
                 <ChevronRight size={18} aria-hidden="true" />
               </button>
@@ -43,7 +43,7 @@ export default function Testimonials() {
                 type="button"
                 onClick={() => go(1)}
                 aria-label="نظر بعدی"
-                className="grid h-11 w-11 place-items-center rounded-full border border-brand/12 bg-white text-brand transition-colors hover:border-brand hover:bg-brand hover:text-ivory"
+                className="grid h-11 w-11 place-items-center rounded-full border border-brand/12 bg-white text-brand transition-colors hover:border-brand hover:bg-brand hover:text-[#141008]"
               >
                 <ChevronLeft size={18} aria-hidden="true" />
               </button>
@@ -54,7 +54,7 @@ export default function Testimonials() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="relative overflow-hidden rounded-[32px] border border-brand/[0.07] bg-[linear-gradient(150deg,#F1E7E4_0%,#FAF7F5_60%,#EFE2DA_100%)] p-7 sm:p-9">
+            <div className="relative overflow-hidden rounded-[32px] border border-brand/[0.07] bg-[linear-gradient(150deg,#131420_0%,#0B0B10_60%,#F4F0E8_100%)] p-7 sm:p-9">
               <Quote
                 size={40}
                 aria-hidden="true"
@@ -76,7 +76,7 @@ export default function Testimonials() {
                       «{item.quote}»
                     </blockquote>
                     <figcaption className="mt-6 flex items-center gap-3 border-t border-brand/10 pt-5">
-                      <span className="grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-[#350103] to-[#905954] text-[13px] font-medium text-ivory">
+                      <span className="grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br from-[#141008] to-[#C5A059] text-[13px] font-medium text-ivory">
                         {item.name.slice(0, 1)}
                       </span>
                       <span>

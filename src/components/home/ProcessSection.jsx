@@ -12,7 +12,7 @@ export default function ProcessSection() {
   return (
     <section className="relative overflow-hidden border-y border-brand/[0.07] bg-white/60 py-20 md:py-28">
       <div
-        className="pointer-events-none absolute -start-20 bottom-0 h-64 w-64 rounded-full bg-[#CFB2A2]/20 blur-3xl"
+        className="pointer-events-none absolute -start-20 bottom-0 h-64 w-64 rounded-full bg-[#9BA3AF]/20 blur-3xl"
         aria-hidden="true"
       />
       <div className="shell relative">
@@ -54,7 +54,7 @@ export default function ProcessSection() {
                       <span
                         className={`relative z-10 grid h-9 w-9 shrink-0 place-items-center rounded-full border text-[11px] transition-colors duration-400 ${
                           isActive
-                            ? 'border-brand bg-brand text-ivory'
+                            ? 'border-brand bg-brand text-[#141008]'
                             : 'border-brand/15 bg-canvas text-mauve group-hover:border-brand/30'
                         }`}
                       >
@@ -75,7 +75,7 @@ export default function ProcessSection() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="relative min-h-[260px] overflow-hidden rounded-[30px] border border-brand/[0.07] bg-[linear-gradient(150deg,#FAF7F5_0%,#F1E7E4_100%)] p-7 sm:p-9">
+            <div className="relative min-h-[260px] overflow-hidden rounded-[30px] border border-brand/[0.07] bg-[linear-gradient(150deg,#0B0B10_0%,#131420_100%)] p-7 sm:p-9">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={step.number}

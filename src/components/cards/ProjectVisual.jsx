@@ -1,6 +1,6 @@
 const BAR_HEIGHTS = [38, 56, 44, 72, 62, 88]
 
-export default function ProjectVisual({ kind = 'browser', palette = ['#350103', '#905954', '#EFE2DA'] }) {
+export default function ProjectVisual({ kind = 'browser', palette = ['#141008', '#C5A059', '#F4F0E8'] }) {
   const [primary, secondary, surface] = palette
 
   return (

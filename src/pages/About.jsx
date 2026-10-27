@@ -73,7 +73,7 @@ export default function About() {
               {principles.map(({ Icon, title, body }) => (
                 <div
                   key={title}
-                  className="rounded-[26px] border border-brand/[0.07] bg-[#FCFAF9] p-5"
+                  className="rounded-[26px] border border-brand/[0.07] bg-[#101018] p-5"
                 >
                   <span className="grid h-9 w-9 place-items-center rounded-xl bg-blush text-mauve">
                     <Icon size={16} aria-hidden="true" />
@@ -83,7 +83,7 @@ export default function About() {
                 </div>
               ))}
 
-              <div className="rounded-[26px] bg-[linear-gradient(150deg,#350103_0%,#2E0002_100%)] p-6 text-ivory">
+              <div className="rounded-[26px] bg-[linear-gradient(150deg,#141008_0%,#0C0A05_100%)] p-6 text-ivory">
                 <h2 className="text-[15px] font-bold">بیایید درباره پروژه شما صحبت کنیم</h2>
                 <p className="mt-2 text-[12.5px] leading-7 text-ivory/70">
                   یک پیام کوتاه درباره کسب‌وکارتان بفرستید؛ در اولین فرصت پاسخ می‌دهیم.

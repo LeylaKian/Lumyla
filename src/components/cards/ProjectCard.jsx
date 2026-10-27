@@ -15,7 +15,7 @@ export default function ProjectCard({ project, large = false, className = '' }) 
         <span className="absolute start-4 top-4 rounded-full bg-white/85 px-3 py-1 text-[11px] font-medium text-brand backdrop-blur-sm">
           {project.categoryLabel}
         </span>
-        <span className="absolute end-4 top-4 rounded-full bg-brand/85 px-2.5 py-1 text-[10px] text-ivory backdrop-blur-sm">
+        <span className="absolute end-4 top-4 rounded-full bg-brand/85 px-2.5 py-1 text-[10px] text-[#141008] backdrop-blur-sm">
           نمونه نمایشی
         </span>
       </div>
@@ -27,7 +27,7 @@ export default function ProjectCard({ project, large = false, className = '' }) 
           >
             {project.title}
           </h3>
-          <span className="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full border border-brand/10 text-mauve transition-all duration-400 group-hover:border-brand group-hover:bg-brand group-hover:text-ivory">
+          <span className="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full border border-brand/10 text-mauve transition-all duration-400 group-hover:border-brand group-hover:bg-brand group-hover:text-[#141008]">
             <ArrowUpLeft size={15} aria-hidden="true" />
           </span>
         </div>
