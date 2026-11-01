@@ -1,0 +1,147 @@
+/*
+Theme Name: LUMYLA
+Theme URI: https://lumyla.ir
+Author: LUMYLA Creative Digital Studio
+Author URI: https://lumyla.ir
+Description: قالب اختصاصی استودیو خلاق دیجیتال لومیلا — طراحی سینمایی شب‌محور با هیروی اسکرول‌محور، راست‌به‌چپ و کاملاً واکنش‌گرا. قالب کلاسیک وردپرس با قالب‌های آماده برای صفحه اصلی، خدمات، تعرفه، نمونه‌کارها، مجله و تماس.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lumyla
+Tags: rtl-language-support, dark, custom-menu, featured-images, translation-ready
+*/
+
+/* ---------------------------------------------------------------------------
+   This file only carries the WordPress specific glue. The design system itself
+   lives in assets/css/{tokens,base,components,sections}.css and is enqueued
+   from functions.php in that exact order.
+   --------------------------------------------------------------------------- */
+
+/* WordPress core classes the design system does not know about. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background: #0b1120;
+  clip: auto;
+  clip-path: none;
+  color: var(--gold);
+  display: block;
+  font-size: 0.85rem;
+  height: auto;
+  inset-inline-start: 1rem;
+  padding: 0.85rem 1.25rem;
+  top: 1rem;
+  width: auto;
+  z-index: 100000;
+}
+
+.alignleft {
+  float: left;
+  margin: 0 1.2rem 1rem 0;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 1rem 1.2rem;
+}
+
+.aligncenter {
+  display: block;
+  margin-inline: auto;
+}
+
+.wp-caption {
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  color: var(--text-3);
+  font-size: var(--fs-xs);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.sticky .post-card__title::after {
+  content: ' ★';
+  color: var(--gold);
+}
+
+/* The search overlay is rendered on every page and only shown on demand.
+   (The React build mounts it conditionally, so its stylesheet has no closed
+   state of its own.) */
+.search-dialog[data-open='false'] {
+  display: none;
+}
+
+/* The loading cue and scroll hint belong to the pinned hero only. */
+.hero-scroll--static .hero__loader,
+.hero-scroll--static .hero__cue {
+  display: none;
+}
+
+/* The admin bar must never sit on top of the fixed site header. */
+body.admin-bar .site-header {
+  top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+  body.admin-bar .site-header {
+    top: 46px;
+  }
+}
+
+/* Comments — light, on-brand, only used when a post enables them. */
+.comment-list {
+  display: grid;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0 0 2rem;
+  padding: 0;
+}
+
+.comment-list .comment-body {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.comment-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.comment-form label {
+  color: var(--text-3);
+  display: block;
+  font-size: var(--fs-xs);
+  margin-bottom: 0.4rem;
+}
+
+.comment-form input[type='text'],
+.comment-form input[type='email'],
+.comment-form input[type='url'],
+.comment-form textarea {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-family: inherit;
+  font-size: var(--fs-sm);
+  padding: 0.75rem 0.9rem;
+  width: 100%;
+}
